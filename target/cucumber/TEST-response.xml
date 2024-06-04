@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="20.186">
+<testcase classname="Shopping Online" name="Scenario 1 - Clear cart and abandon shopping" time="9.961">
+<system-out><![CDATA[Given Store website has loaded..............................................passed
+And The item Bacardi Breezer - Tropical is successfully added to the cart...passed
+When The clear button is clicked............................................passed
+Then The cart is clear......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Online" name="Scenario 2 - Adjust quantities and checkout" time="9.671">
+<system-out><![CDATA[Given Store website has loaded..............................................passed
+And The item Bacardi Breezer - Tropical is added to the cart................passed
+And A second item Wine - Gato Negro Cabernet is added to the cart...........passed
+And The Cart link is clicked................................................passed
+And Cart page has loaded....................................................passed
+When The quantity of the first item is increased............................passed
+And The quantity of the first item is increased.............................passed
+And The total of items match................................................passed
+And The total payment amount matches........................................passed
+And The first item has a reduce button in cart..............................passed
+And The second item has a delete button in cart.............................passed
+And The reduce button is clicked for the first item.........................passed
+And The total of items match................................................passed
+And The total payment amount matches........................................passed
+And The delete button is clicked for the second item........................passed
+And The total of items match................................................passed
+And The total payment amount matches........................................passed
+And The checkout button is clicked..........................................passed
+Then The Checkout successfully message is displayed.........................passed
+And The cart is clear.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
